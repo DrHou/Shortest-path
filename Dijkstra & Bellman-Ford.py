@@ -73,7 +73,7 @@ def dijstra(network,start,end,performance):# define the funtion in case of dupli
 #results = dijstra(link,1,300,1)#apply function
 
 
-#Label correcting algorithm
+#Bellman-Ford
 
 
 def bellman(link,start,end,perform):
