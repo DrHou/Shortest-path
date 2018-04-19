@@ -3,16 +3,14 @@
 """
 Created on Mon Jan 29 19:36:01 2018
 
-@author: houzenghao
+@author: Dr.Hou
 """
 
 import math
 import pandas as pd 
 import time
 
-
-#ca = pd.read_excel('/Users/yantingshi/Desktop/ECI 257/test.xlsx')# read text file
-ca = pd.read_excel('/Users/yantingshi/Desktop/ECI257/anaheim.xlsx')# read test network file
+ca = pd.read_excel('anaheim.xlsx')# read test network file
 ca = ca.as_matrix() # convert to matrix
 
 link = {}#create a dict and ready to save link information in this
