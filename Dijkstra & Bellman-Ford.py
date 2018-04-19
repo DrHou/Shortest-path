@@ -76,7 +76,7 @@ def dijstra(network,start,end,performance):# define the funtion in case of dupli
 #Label correcting algorithm
 
 
-def labelcorrecting(link,start,end,perform):
+def bellman(link,start,end,perform):
     output =[]
     excute = {}
     for i in link.keys():# set infinite to all link in dict
@@ -121,14 +121,14 @@ for i in test:
     start, end = i
     results.append(dijstra(link,start,end,weight))
     print dijstra(link,start,end,weight)
-    results.append(labelcorrecting(link,start,end,weight))
-    print labelcorrecting(link,start,end,weight)
-#labelcorrecting(link,1,300,1)
+    results.append(bellman(link,start,end,weight))
+    print bellman(link,start,end,weight)
+#bellman(link,1,300,1)
 
 weight = 3
 for i in test:
     start, end = i
     results.append(dijstra(link,start,end,weight))
     print dijstra(link,start,end,weight)
-    results.append(labelcorrecting(link,start,end,weight))
-    print labelcorrecting(link,start,end,weight)
+    results.append(bellman(link,start,end,weight))
+    print bellman(link,start,end,weight)
